@@ -9,7 +9,7 @@ from .models import Employees, Image
 
 
 class EmployeeViewSet(viewsets.ModelViewSet):
-    queryset = Employees.objects.all().order_by('title')
+    queryset = Employees.objects.all().order_by('id')
     serializer_class = EmployeeSerializer
 
 
